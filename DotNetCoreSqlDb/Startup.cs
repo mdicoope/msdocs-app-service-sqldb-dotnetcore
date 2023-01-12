@@ -31,6 +31,7 @@ namespace DotNetCoreSqlDb
             services.AddDbContext<MyDatabaseContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
         }
+//added a comment for test
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
